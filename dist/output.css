@@ -547,10 +547,6 @@ video {
   display: grid;
 }
 
-.w-20 {
-  width: 5rem;
-}
-
 .w-9\/12 {
   width: 75%;
 }
@@ -559,12 +555,8 @@ video {
   flex: 1 1 0%;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-\[2fr_1fr\] {
-  grid-template-columns: 2fr 1fr;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -616,6 +608,18 @@ video {
 .bg-very-dark-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\.\.\/assets\/images\/image-gaming-growth\.jpg\)\] {
+  background-image: url(../assets/images/image-gaming-growth.jpg);
+}
+
+.bg-\[url\(\.\.\/assets\/images\/image-retro-pcs\.jpg\)\] {
+  background-image: url(../assets/images/image-retro-pcs.jpg);
+}
+
+.bg-\[url\(\.\.\/assets\/images\/image-top-laptops\.jpg\)\] {
+  background-image: url(../assets/images/image-top-laptops.jpg);
 }
 
 .p-5 {
@@ -729,12 +733,36 @@ video {
   color: hsl(36 100% 99% / var(--tw-text-opacity));
 }
 
+.bottom-section-container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .bottom-section-container {
+    flex: 1 1 0%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bottom-section-container {
+    flex: 1 1 0%;
+  }
+}
+
 .bottom-section-numbers {
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: hsl(233 8% 79% / var(--tw-text-opacity));
+}
+
+.bottom-section-image {
+  /* @apply w-24 bg-cover */
+  width: 6rem;
+  -o-object-fit: cover;
+     object-fit: cover
 }
 
 .bottom-section-title {
@@ -770,12 +798,20 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:grid-cols-\[1fr_1fr\] {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .md\:grid-cols-\[2fr_1fr\] {
     grid-template-columns: 2fr 1fr;
   }
 }
 
 @media (min-width: 1024px) {
+  .lg\:grid-cols-\[1fr_1fr\] {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .lg\:grid-cols-\[2fr_1fr\] {
     grid-template-columns: 2fr 1fr;
   }
