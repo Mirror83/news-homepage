@@ -13,9 +13,11 @@
 
 <body class="flex items-center justify-center">
   <main class="w-9/12">
-    <nav class="flex py-5 items-center">
-      <h1 class="flex-1 text-4xl font-bold justify-start">W.</h1>
-      <ul class="flex space-x-6 text-sm font-light">
+    <button id="nav-toggle" aria-controls="nav-list" aria-expanded="false"
+      class="z-[20] absolute top-8 right-10 md:hidden">Menu</button>
+    <nav class="flex py-5 items-center justify-between">
+      <h1 class="text-4xl font-bold">W.</h1>
+      <ul id="nav-list" data-visible="false" class="nav-list">
         <li><a href="" class="link">Home</a></li>
         <li><a href="" class="link">New</a></li>
         <li><a href="" class="link">Popular</a></li>
@@ -99,7 +101,7 @@
       </div>
     </section>
   </main>
-
+  <script src="index.js"></script>
 </body>
 
 </html>

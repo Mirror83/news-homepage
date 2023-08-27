@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav-list {
+    @apply flex flex-col px-5 pt-24 gap-5 text-sm font-light
+    fixed inset-[0_0_0_50%] z-10 shadow-2xl bg-white translate-x-full transition-transform
+    md:relative md:inset-0 md:z-auto md:p-0 md:flex-row md:bg-none md:translate-x-0
+}
+
+.nav-list[data-visible="true"] {
+    transform: translateX(0%);
+}
+
 .link {
     @apply hover:text-soft-red
 }
