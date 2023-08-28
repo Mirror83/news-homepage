@@ -5,7 +5,7 @@
 .nav-list {
     @apply flex flex-col px-5 pt-24 gap-5 text-sm font-light
     fixed inset-[0_0_0_50%] z-10 shadow-2xl bg-white translate-x-full transition-transform
-    md:relative md:inset-0 md:z-auto md:p-0 md:flex-row md:bg-none md:translate-x-0
+    sm:relative sm:inset-0 sm:z-auto sm:p-0 sm:flex-row sm:translate-x-0
 }
 
 .nav-list[data-visible="true"] {
@@ -15,6 +15,23 @@
 .link {
     @apply hover:text-soft-red
 }
+
+.mobile-menu-button {
+    @apply w-8 aspect-square z-[20] absolute top-8 right-6 sm:hidden
+}
+
+.mobile-menu-button[aria-expanded="false"] {
+    background-image: url(../assets/images/icon-menu.svg);
+    background-repeat: no-repeat;
+}
+
+.mobile-menu-button[aria-expanded="true"] {
+    background-image: url(../assets/images/icon-menu-close.svg);
+    background-repeat: no-repeat;
+    @apply top-8
+}
+
+
 
 .new-section-titles {
     @apply pb-1 text-lg font-bold hover:text-soft-orange cursor-pointer

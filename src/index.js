@@ -6,9 +6,12 @@ navToggle.addEventListener("click", () => {
     const isVisible = navList.getAttribute("data-visible");
     if (isVisible == "true") {
         navList.setAttribute("data-visible", "false");
-        navToggle.textContent = "Menu";
+        navToggle.setAttribute("aria-expanded", "false");
+
+        // navToggle.textContent = "Menu";
     } else {
         navList.setAttribute("data-visible", "true");
-        navToggle.textContent = "Close";
+        navToggle.setAttribute("aria-expanded", "true");
+        // navToggle.textContent = "Close";
     }
 })

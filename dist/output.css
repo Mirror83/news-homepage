@@ -534,22 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
-.z-\[20\] {
-  z-index: 20;
-}
-
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -563,8 +547,8 @@ video {
   display: grid;
 }
 
-.w-9\/12 {
-  width: 75%;
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .flex-wrap {
@@ -734,7 +718,7 @@ video {
   transition-duration: 150ms;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .nav-list {
     position: relative;
     inset: 0px;
@@ -742,7 +726,6 @@ video {
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     flex-direction: row;
-    background-image: none;
     padding: 0px;
   }
 }
@@ -754,6 +737,32 @@ video {
 .link:hover {
   --tw-text-opacity: 1;
   color: hsl(5 85% 63% / var(--tw-text-opacity));
+}
+
+.mobile-menu-button {
+  position: absolute;
+  top: 2rem;
+  right: 1.5rem;
+  z-index: 20;
+  aspect-ratio: 1 / 1;
+  width: 2rem;
+}
+
+@media (min-width: 640px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+.mobile-menu-button[aria-expanded="false"] {
+  background-image: url(../assets/images/icon-menu.svg);
+  background-repeat: no-repeat;
+}
+
+.mobile-menu-button[aria-expanded="true"] {
+  background-image: url(../assets/images/icon-menu-close.svg);
+  background-repeat: no-repeat;
+  top: 2rem
 }
 
 .new-section-titles {
@@ -836,22 +845,27 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-9\/12 {
+    width: 75%;
+  }
+
   .sm\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 768px) {
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:grid-cols-\[1fr_1fr\] {
     grid-template-columns: 1fr 1fr;
   }
 
   .md\:grid-cols-\[2fr_1fr\] {
     grid-template-columns: 2fr 1fr;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
