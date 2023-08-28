@@ -534,6 +534,22 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  inset: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -545,6 +561,10 @@ video {
 
 .grid {
   display: grid;
+}
+
+.h-\[100\%\] {
+  height: 100%;
 }
 
 .w-11\/12 {
@@ -588,6 +608,11 @@ video {
 .divide-white > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-divide-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-soft-red {
@@ -693,10 +718,22 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-50 {
+  opacity: 0.5;
+}
+
+body[data-mobile-menu-visible="true"] {
+  overflow: hidden;
+}
+
+body[data-mobile-menu-visible="false"] {
+  overflow: auto;
+}
+
 .nav-list {
   position: fixed;
   inset: 0 0 0 50%;
-  z-index: 10;
+  z-index: 20;
   display: flex;
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -743,7 +780,7 @@ video {
   position: absolute;
   top: 2rem;
   right: 1.5rem;
-  z-index: 20;
+  z-index: 30;
   aspect-ratio: 1 / 1;
   width: 2rem;
 }
@@ -762,7 +799,19 @@ video {
 .mobile-menu-button[aria-expanded="true"] {
   background-image: url(../assets/images/icon-menu-close.svg);
   background-repeat: no-repeat;
-  top: 2rem
+  position: fixed;
+  top: 1.75rem
+}
+
+#overlay[data-visible="false"] {
+  display: none;
+}
+
+#overlay[data-visible="true"] {
+  display: block;
+  --tw-backdrop-blur: blur(24px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)
 }
 
 .new-section-titles {
@@ -845,6 +894,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:w-9\/12 {
     width: 75%;
   }
