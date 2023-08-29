@@ -60,7 +60,7 @@ I learned the core concepts of using Tailwind CSS including:
 - Arbitrary values
 - Using custom CSS
 
-I also got reinforce my knowledge of positions in css and also learned about inset, the short-hand for top, bottom, left and right while making the mobile menu.
+I also got reinforce my knowledge of positions in CSS and also learned about inset; the short-hand for top, bottom, left and right while making the mobile menu.
 
 ### Continued development
 
