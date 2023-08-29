@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/Mirror83/news-homepage
+- Solution URL: https://www.frontendmentor.io/solutions/news-homepage-5hWZuNpRts
 - Live Site URL: https://mirror83.github.io/news-homepage
 
 ## My process
