@@ -71,7 +71,7 @@ Other than that, I plan to learn how to use Tailwind CSS with [React](https://re
 
 ### Useful resources
 
-- [Responsive navbar tutorial using HTML, CSS and Javascript](https://www.youtube.com/watch?v=HbBMp6yUXO0&list=PPSV) - This tutorial is done by [Kevin Powell](https://www.youtube.com/@KevinPowell) and, coincidentally, is centered around another Frontend Mentor project - the [Space Tourism](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) project. The navbar created in the tutorial is almost exactly what I needed for this project. Most of what I had to do is to implement the logic he explains in the video using Tailwind CSS. He delivered the concepts very clearly and that is something that cuts across most of his other videos on CSS.
+- [Responsive navbar tutorial using HTML, CSS and Javascript](https://www.youtube.com/watch?v=HbBMp6yUXO0&list=PPSV) - This tutorial is done by [Kevin Powell](https://www.youtube.com/@KevinPowell) and, coincidentally, is centered around another Frontend Mentor project - the [Space Tourism](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3) project. The navbar created in the tutorial is almost exactly what I needed for this project. Most of what I had to do is implement the logic he explains in the video using Tailwind CSS. He delivered the concepts very clearly and that is something that cuts across most of his other videos on CSS.
 
 ## Author
 
